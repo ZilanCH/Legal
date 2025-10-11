@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechtliche Informationen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 60px 40px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 50px;
+            font-size: 1.1em;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .link-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .link-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .link-card p {
+            font-size: 0.95em;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+        
+        .icon {
+            font-size: 1.5em;
+        }
+        
+        footer {
+            text-align: center;
+            color: #999;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+            
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rechtliche Informationen</h1>
+        <p class="subtitle">Wichtige Links und Dokumentationen</p>
+        
+        <div class="links-grid">
+            <a href="/impressum.html" class="link-card">
+                <h3><span class="icon">📋</span> Impressum</h3>
+                <p>Kontaktinformationen und rechtliche Angaben zum Betreiber dieser Website.</p>
+            </a>
+            
+            <a href="/datenschutz.html" class="link-card">
+                <h3><span class="icon">🔒</span> Datenschutz</h3>
+                <p>Erfahren Sie, wie wir Ihre persönlichen Daten schützen und verarbeiten.</p>
+            </a>
+            
+            <a href="/agb.html" class="link-card">
+                <h3><span class="icon">📄</span> AGB</h3>
+                <p>Allgemeine Geschäftsbedingungen für die Nutzung unserer Dienste.</p>
+            </a>
+            
+            <a href="/cookies.html" class="link-card">
+                <h3><span class="icon">🍪</span> Cookie-Richtlinie</h3>
+                <p>Informationen über die Verwendung von Cookies auf dieser Website.</p>
+            </a>
+            
+            <a href="/kontakt.html" class="link-card">
+                <h3><span class="icon">✉️</span> Kontakt</h3>
+                <p>Kontaktieren Sie uns bei Fragen oder Anliegen.</p>
+            </a>
+            
+            <a href="/sitemap.html" class="link-card">
+                <h3><span class="icon">🗺️</span> Sitemap</h3>
+                <p>Übersicht über alle Seiten dieser Website.</p>
+            </a>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Ihre Webseite. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+</body>
+</html>
